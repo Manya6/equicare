@@ -4,7 +4,6 @@
 //
 //  Created by Manya Malhotra on 10/01/2025.
 //
-
 //
 //  thirdView.swift
 //  question app

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct equicareApp: App {
+    @StateObject var viewModel = AuthViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()

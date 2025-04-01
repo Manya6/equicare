@@ -25,7 +25,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .padding([.leading, .bottom, .trailing])
                 
-                NavigationLink(destination: thirdView()) {
+                NavigationLink(destination: LoginView()) {
                     Text("Tell me more!")
                         .padding()
                         .background(Color(red: 106/255, green: 153/255, blue: 78/255))
