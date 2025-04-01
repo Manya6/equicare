@@ -9,6 +9,15 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
+extension AuthViewModel {
+    static var preview: AuthViewModel {
+        let vm = AuthViewModel()
+        vm.userSession = nil // Simulate logged-out state
+        return vm
+    }
+}
+
+
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
@@ -18,11 +27,11 @@ class AuthViewModel: ObservableObject {
     }
     
     func signIn(withEmail email: String, password: String) async throws {
-        
+        print("Sign In...")
     }
     
     func createUser(withEmail email: String, password: String, fullname: String) async throws {
-        
+        print("Create User")
     }
     
     func signOut() {

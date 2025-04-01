@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         NavigationStack{
+            
+//            Group {
+//                if viewModel.userSession != nil{
+//                    ProfileView()
+//                }
+//                else {
+//                    LoginView()
+//                }
+//            }
         ZStack{
             Rectangle()
                 .fill(Color(red:56/255 , green: 102/255, blue: 65/255))
@@ -45,4 +55,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(AuthViewModel.preview)
 }
